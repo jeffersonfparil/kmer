@@ -36,15 +36,15 @@ function search(c_idx::CompressedMetaGraph, query::String, k::Int)
     return result
 end
 
-# Initialize with 3 samples
-index = MetaGraphIndex(31, ["Human_Gut", "Soil_Alpha", "Ocean_Surface"])
+# # Initialize with 3 samples
+# index = MetaGraphIndex(31, ["Human_Gut", "Soil_Alpha", "Ocean_Surface"])
 
-# Index some mock data
-add_sample!(index, "Human_Gut", "ATGC...") 
-add_sample!(index, "Ocean_Surface", "ATGC...")
+# # Index some mock data
+# add_sample!(index, "Human_Gut", "ATGC...") 
+# add_sample!(index, "Ocean_Surface", "ATGC...")
 
-# Compress and Search
-compressed = compress(index)
-hits = search(compressed, "ATGC", 31)
+# # Compress and Search
+# compressed = compress(index)
+# hits = search(compressed, "ATGC", 31)
 
-println("Found in samples: ", findall(hits))
+# println("Found in samples: ", findall(hits))
